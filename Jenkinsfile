@@ -13,7 +13,7 @@ pipeline {
                     dir('terraform') {
                         sh "rm -rf .terraform"
                         sh "rm -r .terraform.lock.hcl"
-                        sh "terraform init -backend-config="access_key=" -backend-config="secret_key="""
+                        sh "terraform init"
                         sh "terraform apply -auto-approve"
                     }
                 }
