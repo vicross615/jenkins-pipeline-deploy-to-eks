@@ -13,8 +13,8 @@ pipeline {
                     dir('terraform') {
                         // sh "rm -rf .terraform"
                         // sh "rm -r .terraform.lock.hcl"
-                        sh "terraform init"
-                        sh "terraform apply -auto-approve"
+                        // sh "terraform init"
+                        // sh "terraform apply -auto-approve"
                     }
                 }
             }
